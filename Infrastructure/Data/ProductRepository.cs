@@ -3,6 +3,7 @@ using Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,6 +17,12 @@ namespace Infrastructure.Data
         {
            _context = context;
         }
+
+        public async Task<IReadOnlyList<ProductBrand>> GetProductBrandsAsync()
+        {
+            return await _context.ProductBrands.ToListAsync();
+        }
+
         public async Task<Product> GetProductByIdAsync(int Id)
         {
             return await _context.Products.FindAsync(Id);
@@ -23,7 +30,18 @@ namespace Infrastructure.Data
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
-            return await _context.Products.ToListAsync();
+            var products = _context.Products.ToList();
+            foreach(var item in products)
+            {
+                item.ProductBrand = await _context.ProductBrands.FindAsync(item.ProductBrandId);
+                item.ProductType = await _context.ProductTypes.FindAsync(item.ProductTypeId);
+            }
+            return products ;
+        }
+
+        public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync()
+        {
+            return await _context.ProductTypes.ToListAsync();
         }
     }
 }
