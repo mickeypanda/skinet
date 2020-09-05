@@ -25,17 +25,20 @@ namespace Infrastructure.Data
 
         public async Task<Product> GetProductByIdAsync(int Id)
         {
-            return await _context.Products.FindAsync(Id);
+            //Include() indicates the eager loading for the fields through entityframework
+            return await _context.Products
+                .Include(p=>p.ProductType)
+                .Include(p=>p.ProductBrand)
+                .FirstOrDefaultAsync(p=>p.Id==Id);
         }
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
-            var products = _context.Products.ToList();
-            foreach(var item in products)
-            {
-                item.ProductBrand = await _context.ProductBrands.FindAsync(item.ProductBrandId);
-                item.ProductType = await _context.ProductTypes.FindAsync(item.ProductTypeId);
-            }
+            var products =await _context.Products
+                .Include(p=>p.ProductBrand)
+                .Include(p=>p.ProductType)
+                .ToListAsync();
+            
             return products ;
         }
 
