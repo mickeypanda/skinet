@@ -1,5 +1,6 @@
 ﻿using Core.Entities;
 using Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,14 +10,20 @@ namespace Infrastructure.Data
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        public Task<IReadOnlyList<T>> GetAllListAsync()
+        private readonly StoreContext _context;
+
+        public GenericRepository(StoreContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+        public async Task<IReadOnlyList<T>> GetAllListAsync()
+        {
+           return await _context.Set<T>().ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(int Id)
+        public async Task<T> GetByIdAsync(int Id)
         {
-            throw new NotImplementedException();
+            return await _context.Set<T>().FindAsync(Id);
         }
     }
 }
