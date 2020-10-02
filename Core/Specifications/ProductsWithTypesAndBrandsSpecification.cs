@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Core.Specifications
 {
-    class ProductsWithTypesAndBrandsSpecification:BaseSpecification<Product>
+    public class ProductsWithTypesAndBrandsSpecification:BaseSpecification<Product>
     {
         public ProductsWithTypesAndBrandsSpecification()
         {
