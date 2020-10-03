@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Helpers;
+using AutoMapper;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +35,8 @@ namespace API
             services.AddScoped<IProductRepository, ProductRepository>();
             //Configuration of IgenericRepository with GenericRepository in a f=differetn manner as it is Generic type class
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            //configuration of Automapper in the services
+            services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => x.UseSqlite(_configuration.GetConnectionString("DefaultConnection")));
         }
