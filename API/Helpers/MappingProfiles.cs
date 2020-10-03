@@ -16,7 +16,8 @@ namespace API.Helpers
             //This method is for creating the map between objects, from source to destinationas
             CreateMap<Product, ProductToReturnDto>()
                 .ForMember(d => d.ProductBrand, o => o.MapFrom(s => s.ProductBrand.Name)) //ForMember is used for mapping the propeties according to the requirement.
-                .ForMember(d => d.ProductType, o => o.MapFrom(s => s.ProductType.Name));
+                .ForMember(d => d.ProductType, o => o.MapFrom(s => s.ProductType.Name))
+                .ForMember(d => d.PictureUrl, o => o.MapFrom<ProductUrlResolver>()); //Used ProductUrlResolver to map and resolve the picture URLS as per complete urls.s
         }
     }
 }
