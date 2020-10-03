@@ -53,6 +53,10 @@ namespace API
 
             app.UseRouting();
 
+            //for using and sending the static files from the controller services
+            //Chronology matters
+            app.UseStaticFiles();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
