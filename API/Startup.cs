@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Helpers;
+using API.Middlewares;
 using AutoMapper;
 using Core.Interfaces;
 using Infrastructure.Data;
@@ -44,11 +45,18 @@ namespace API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+
+            //This was default provided by application template. If we are using any middleware then we have to provide our middleware 
+            //here to make it register for the application
+            /*if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            
+            }*/
+
+            //here we have registered our middleware class to get the httpresponse according to our requirement.
+            //This method is being used instead of the above commented method.
+            app.UseMiddleware<ExceptionMiddleware>();
+
             //This method is used for reexecuting the controllers for the error code type, when they get an error of unknown type or unhandeled type.
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
             app.UseHttpsRedirection();

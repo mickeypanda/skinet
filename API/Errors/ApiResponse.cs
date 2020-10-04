@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace API.Errors
 {
+    /// <summary>
+    /// This class is being used for sending the proper format of response with the error code and message.
+    /// </summary>
     public class ApiResponse
     {
         public ApiResponse(int statusCode, string errorMessage = null)
