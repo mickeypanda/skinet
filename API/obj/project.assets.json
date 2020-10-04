@@ -1962,11 +1962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DotNetCoreProjects\\skinet\\API\\API.csproj",
+      "projectUniqueName": "F:\\DotNetCoreProjects\\Skinet\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "F:\\DotNetCoreProjects\\skinet\\API\\API.csproj",
+      "projectPath": "F:\\DotNetCoreProjects\\Skinet\\API\\API.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "F:\\DotNetCoreProjects\\skinet\\API\\obj\\",
+      "outputPath": "F:\\DotNetCoreProjects\\Skinet\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1987,8 +1987,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\Infrastructure.csproj"
+            "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

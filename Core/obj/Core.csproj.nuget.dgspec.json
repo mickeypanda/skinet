@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj": {}
+    "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj": {}
   },
   "projects": {
-    "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj": {
+    "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj",
+        "projectPath": "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "F:\\DotNetCoreProjects\\skinet\\Core\\obj\\",
+        "outputPath": "F:\\DotNetCoreProjects\\Skinet\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

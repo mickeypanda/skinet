@@ -48,7 +48,9 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
+            //This method is used for reexecuting the controllers for the error code type, when they get an error of unknown type or unhandeled type.
+            app.UseStatusCodePagesWithReExecute("/errors/{0}");
             app.UseHttpsRedirection();
 
             app.UseRouting();
