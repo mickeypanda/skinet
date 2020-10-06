@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fdvgkWnBAHe4Cg5PY32OphtNlw43q6a+Xb+13p/j3eTkTSZACZ7nnYMYImoZ2GlzC8qxrCwMjg3Ha+wa20qciA==",
+  "dgSpecHash": "VsbARus6kA1NTWVG1X9JWLYzYxpzTiSxfCfST9HJaRksL5ZzGUYrVuwFooTOwuR4+eSt6pYMTrQqLk3sbZj/gg==",
   "success": true,
-  "projectFilePath": "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

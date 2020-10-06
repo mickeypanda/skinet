@@ -1623,11 +1623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "F:\\DotNetCoreProjects\\Skinet\\Infrastructure\\obj\\",
+      "outputPath": "F:\\DotNetCoreProjects\\skinet\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1648,8 +1648,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj": {
-              "projectPath": "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj"
+            "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj": {
+              "projectPath": "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj"
             }
           }
         }

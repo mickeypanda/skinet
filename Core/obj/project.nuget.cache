@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S0i/5eBdQe3/7bXulk3aRNn/7+Tkqtg09+hjV9bUG7YvMPIudCk7Nh2WuYxntIsTqlTeieboGLnChVdlmwg3Iw==",
+  "dgSpecHash": "J7HVYdtU0AS65KR8cfW8yookWHlSt4bKOfEiVFs/A9yjDuqnm/0jwp0WgTbyOwS0XRtdJbxLPFCNh3FZJpSx2Q==",
   "success": true,
-  "projectFilePath": "F:\\DotNetCoreProjects\\Skinet\\Core\\Core.csproj",
+  "projectFilePath": "F:\\DotNetCoreProjects\\skinet\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
